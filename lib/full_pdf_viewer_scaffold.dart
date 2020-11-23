@@ -68,7 +68,7 @@ class _PDFViewScaffoldState extends State<PDFViewerScaffold> {
     final topPadding = widget.primary ? mediaQuery.padding.top : 0.0;
     final top =
     fullscreen ? 0.0 : widget.appBar.preferredSize.height + topPadding;
-    var height = mediaQuery.size.height - top;
+    var height = mediaQuery.size.height - top - 100;
     if (height < 0.0) {
       height = 0.0;
     }
